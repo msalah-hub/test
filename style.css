@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.all_elements {
+  background-image: url("images/dandelion-background.png");
+  background-size: 790px 697px;        
+  background-repeat: no-repeat;
+  background-position: center -100px;
+}
 
 .product-card-wrapper {
   display: flex;
@@ -12,7 +18,7 @@
   gap: 25px;
   width: 1110px;
   height: 1191px;
-  margin: 0px auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -44,15 +50,6 @@
   width: 290px;
   margin: 0 auto 20px;
   padding: 0px;
-}
-
-.product-card__bg-flowers{
-  position: absolute;
-  width: 790px;
-  height: 697px;
-  left: 85px;
-  top: -400px;
-  background: url("bg-1.png");
 }
 
 .product-card__for-skin {
