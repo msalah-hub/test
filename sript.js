@@ -6,7 +6,7 @@ const grayHashColor = '#1c1a1a90';
 
 recolorFirstCardButton.addEventListener('click', () => {
   firstProductCard.style.backgroundColor = grayHashColor;
-})
+});
 
 // Покраска всех карточек
 
@@ -16,7 +16,8 @@ const recolorAllCardButton = document.getElementById('recolor-all-card-button');
 
 recolorAllCardButton.addEventListener('click', () => {
   productCards.forEach(
-    card => card.style.backgroundColor = greenHashColor);
+    card => card.style.backgroundColor = greenHashColor
+  );
 });
 
 // Переход на страницу Google
