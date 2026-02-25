@@ -143,3 +143,23 @@
   line-height: 24px;
   color: #515076;
 }
+
+.buttons {
+  position: absolute;
+  top: 150px;
+  right: 405px;
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 12px 24px;
+  border: none; 
+  border-radius: 30px; 
+  color: white; 
+  cursor: pointer;
+}
+
+.active-green { 
+  background-color: #48ea24;
+}
