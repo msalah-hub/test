@@ -2,20 +2,24 @@
 
 
 let city = 'Medina';
-let temperatureInTheCity = '33';
+let cityTemperature = '33';
 
-console.log(`Сейчас в ${city} температура — ${temperatureInTheCity} градусов по Цельсию`);
+const getTemperature = (city, cityTemperature) => {
+ console.log(`Сейчас в ${city} температура — ${cityTemperature} градусов по Цельсию`);
+};
+
+getTemperature(city, cityTemperature);
 
 
 // Второе задание - проверка скорости относительно скорости света
 
 
-const speedOfLight = 299792458;
+const lightSpeed = 299792458;
 
 const checkSpeed = (speed) => {
-  if (speed > speedOfLight) {
+  if (speed > lightSpeed) {
     return "Сверхсветовая скорость";
-  } else if (speed < speedOfLight) {
+  } else if (speed < lightSpeed) {
     return "Субсветовая скорость";
   } else {
     return "Скорость света";
@@ -30,20 +34,20 @@ console.log(checkSpeed(299792458));
 // Третье задание - проверка бюджета для покупки продукта
 
 
-let nameOfProduct = "Парфюм аль-фарид";
-let priceOfProduct = 100;
+let productName = "Парфюм аль-фарид";
+let productPrice = 100;
 
-const checkPrice = (money) => {
-  if (money >= priceOfProduct) {
-    console.log(`${nameOfProduct} приобретен`);
+const buyProduct = (money) => {
+  if (money >= productPrice) {
+    console.log(`${productName} приобретен. Спасибо за покупку!`);
   } else {
-    let notEnough = priceOfProduct - money;
+    const notEnough = productPrice - money;
     console.log(`Вам не хватает ${notEnough}$, пополните баланс`);
   }
 };
 
-checkPrice(120);
-checkPrice(70);
+buyProduct(120);
+buyProduct(70);
 
 
 // Четвертое задание - любая функция - развитие аналитических способностей
