@@ -2,13 +2,13 @@
 
 
 let city = 'Medina';
-let cityTemperature = '33';
+let temperature = '33';
 
-const getTemperature = (city, cityTemperature) => {
- console.log(`Сейчас в ${city} температура — ${cityTemperature} градусов по Цельсию`);
+const showTemperature = (city, temperature) => {
+  console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`);
 };
 
-getTemperature(city, cityTemperature);
+showTemperature(city,temperature);
 
 
 // Второе задание - проверка скорости относительно скорости света
