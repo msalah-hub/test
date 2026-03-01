@@ -100,7 +100,7 @@ const books = [
     coverColor: "Синий",
     genre: "Детектив"
   }
-]
+];
 
 books.push(
   {
