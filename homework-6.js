@@ -141,17 +141,17 @@ console.log(singleLibrery);
 
 // Восьмое задание - ap: добавление свойства isRare по году выпуска
 
-const getRareStatus = (booksArray) => {
+const getRareBooks = (booksArray) => {
   return booksArray.map(function(books) {
     if (books.year > 2000) {
-      return {...book, isRare: true };
+      return {...books, isRare: true };
   } else {
-      return { ...book, isRare: false };
+      return {...books, isRare: false };
   }
   })
 };  
 
-const result = getRareStatus(singleLibrery);
+const result = getRareBooks(singleLibrery);
 console.log(result)
 
 
