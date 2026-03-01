@@ -48,11 +48,11 @@ addMaxSpeed();
 // Четвертое задание - функция вывода значения свойства объекта по ключу
 
 
-const showValue = (obj, key) => {
+const showObjectValue = (obj, key) => {
   console.log(obj[key]);
 };
 
-showValue(userCar, "model");
+showObjectValue(userCar, "model");
 
 
 // Пятое задание - массив с названиями продуктов
@@ -65,51 +65,51 @@ const nameProducts = ["laptop", "smartphone", "notebook"];
 
 
 const books = [
- {
-  title: "Не грусти (La tahzan)",
-  author: "Аид Аль-Карни",
-  year: 2003,
-  coverColor: "Gold",
-  genre: "Саморазвитие"
- },
- {
-  title: "Жизнь Пророка (Ар-Рахик аль-Махтум)",
-  author: "Сафи ар-Рахман аль-Мубаракфури",
-  year: 1976,
-  coverColor: "Зеленый",
-  genre: "Биография / История"
- },
- {
-  title: "Преступление и наказание",
-  author: "Федор Достоевский",
-  year: 1866,
-  coverColor: "Темно-синий",
-  genre: "Психологический роман"
- },
- {
-  title: "Маленький принц",
-  author: "Антуан де Сент-Экзюпери",
-  year: 1943,
-  coverColor: "Желтый",
-  genre: "Сказка-притча"
- },
- {
-  title: "Приключения Шерлока Холмса",
-  author: "Артур Конан Дойл",
-  year: 1892,
-  coverColor: "Синий",
-  genre: "Детектив"
- }
+  {
+    title: "Не грусти (La tahzan)",
+    author: "Аид Аль-Карни",
+    year: 2003,
+    coverColor: "Gold",
+    genre: "Саморазвитие"
+  },
+  {
+    title: "Жизнь Пророка (Ар-Рахик аль-Махтум)",
+    author: "Сафи ар-Рахман аль-Мубаракфури",
+    year: 1976,
+    coverColor: "Зеленый",
+    genre: "Биография / История"
+  },
+  {
+    title: "Преступление и наказание",
+    author: "Федор Достоевский",
+    year: 1866,
+    coverColor: "Темно-синий",
+    genre: "Психологический роман"
+  },
+  {
+    title: "Маленький принц",
+    author: "Антуан де Сент-Экзюпери",
+    year: 1943,
+    coverColor: "Желтый",
+    genre: "Сказка-притча"
+  },
+  {
+    title: "Приключения Шерлока Холмса",
+    author: "Артур Конан Дойл",
+    year: 1892,
+    coverColor: "Синий",
+    genre: "Детектив"
+  }
 ]
 
 books.push(
-{
-  title: "Гарри Поттер и философский камень",
-  author: "Джоан Роулинг",
-  year: 1997,
-  coverColor: "Фиолетовый",
-  genre: "Фэнтези"
-}
+  {
+    title: "Гарри Поттер и философский камень",
+    author: "Джоан Роулинг",
+    year: 1997,
+    coverColor: "Фиолетовый",
+    genre: "Фэнтези"
+  }
 );
 
 console.log(books);
@@ -119,20 +119,20 @@ console.log(books);
 
 
 const islamicBooks = [
-{
-  title: "Не грусти (La tahzan)",
-  author: "Аид Аль-Карни",
-  year: 2003,
-  coverColor: "Золотой",
-  genre: "Саморазвитие"
-},
-{
-  title: "Жизнь Пророка (Ар-Рахик аль-Махтум)",
-  author: "Сафи ар-Рахман аль-Мубаракфури",
-  year: 1976,
-  coverColor: "Зеленый",
-  genre: "Биография / История"
-}
+  {
+    title: "Не грусти (La tahzan)",
+    author: "Аид Аль-Карни",
+    year: 2003,
+    coverColor: "Золотой",
+    genre: "Саморазвитие"
+  },
+  {
+    title: "Жизнь Пророка (Ар-Рахик аль-Махтум)",
+    author: "Сафи ар-Рахман аль-Мубаракфури",
+    year: 1976,
+    coverColor: "Зеленый",
+    genre: "Биография / История"
+  } 
 ];
 
 const singleLibrery = [...books, ...islamicBooks];
@@ -141,7 +141,7 @@ console.log(singleLibrery);
 
 // Восьмое задание - ap: добавление свойства isRare по году выпуска
 
-const addRareStatus = (booksArray) => {
+const getRareStatus = (booksArray) => {
   return booksArray.map(function(books) {
     if (books.year > 2000) {
       return {...book, isRare: true };
@@ -151,7 +151,7 @@ const addRareStatus = (booksArray) => {
   })
 };  
 
-const result = addRareStatus(singleLibrery);
+const result = getRareStatus(singleLibrery);
 console.log(result)
 
 
