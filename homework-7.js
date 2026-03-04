@@ -58,12 +58,12 @@ console.log(updatedUsers);
 // Шестое задание - Преобразование объектов к id и name
 
 
-const userId = commentsSocialMedia.map(user => ({
+const usersId = commentsSocialMedia.map(user => ({
   id: user.id,
   name: user.name
 }));
 
-console.log(userId);
+console.log(usersId);
 
 
 // Седьмое задание - Добавление флага isInvalid по длине body
