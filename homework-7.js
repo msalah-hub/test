@@ -19,9 +19,9 @@ const turtles = [
   "Raf"
 ];
 
-const newTurtles = turtles.find(turtle => turtle === "Leo");
+const newTurtle = turtles.find(turtle => turtle === "Leo");
 
-console.log(newTurtles);
+console.log(newTurtle);
 
 
 // Третье задание - Функция переворота массива
@@ -58,12 +58,12 @@ console.log(updatedUsers);
 // Шестое задание - Преобразование объектов к id и name
 
 
-const userNameId = commentsSocialMedia.map(user => ({
+const userId = commentsSocialMedia.map(user => ({
   id: user.id,
   name: user.name
 }));
 
-console.log(userNameId);
+console.log(userId);
 
 
 // Седьмое задание - Добавление флага isInvalid по длине body
@@ -83,7 +83,7 @@ console.log(validatedComments);
 // reduce()
 const userEmails = commentsSocialMedia.reduce((accumulator, user) => {
   return [...accumulator, user.email];
-},[]);
+}, []);
 
 console.log(userEmails);
 
