@@ -5,19 +5,17 @@ const productTemplate = document.querySelector('#product-template')
 const productList = document.querySelector('#product-list')
 
 
-function renderCards(arr) {
-  arr.forEach(product =>{
-    const productClone = productTemplate.content.cloneNode(true);
-
-    productClone.querySelector('.product-name').textContent = product.name;
-    productClone.querySelector('.product-description').textContent = product.description;
-    productClone.querySelector('.product-price').textContent = product.price;
-    productClone.querySelector('.product-category').textContent = product.category;
-    productClone.querySelector('.product-rating').textContent = product.rating;
-    productClone.querySelector('.product-inStock').textContent = product.inStock;
-    productList.appendChild(productClone);
+function renderCards(count) {
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach((card, index) => {
+    if (index < count) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
   });
-};
+}
+
 
 
 // 4 задание 
@@ -45,5 +43,5 @@ function getCount() {
 
 
 const count = getCount();
-renderCards(products.slice(0, count));
+renderCards(count);
 
