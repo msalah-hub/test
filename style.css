@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+#product-list {
+  list-style: none;
+  padding: 0;
+}
+
 .all_elements {
   background-image: url("images/dandelion-background.png");
   background-size: 790px 697px;        
@@ -104,6 +109,10 @@
   line-height: 18px;
   color: #515076;
   background-size: 790px 697px;
+}
+
+.product-card__composition li {
+  white-space: nowrap;
 }
 
 .product-card__item {
