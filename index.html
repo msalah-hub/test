@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="footer.css">
   <title>Product card</title>
 </head>
 <body>
@@ -19,119 +19,72 @@
     <button id="open-google-button">Открыть Google</button>
     <button id="recolor-button">Нажми</button>
   </div> 
-  <script src="/sript.js"></script>
+</div>
+<footer class="footer-site">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2>Products Cards</h2>
+      <p>У Нас Самые Лучше Продукты Для Кожи!</p>
+      <nav aria-label="Социальные сети">
+        <img src="/images/tg-icon.svg" alt="">
+        <img src="/images/vk-icon.svg" alt="">
+      </nav>
+    </div>
+    <section class="footer-subscribe">
+      <h3>Подпишись на наши акции:</h3>
+      <form class="form-in" action="">
+        <input placeholder="Введи email... " name="email" type="email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
+    <nav aria-label="Быстрые ссылки">
+      <h3>Быстрые ссылки</h3>
+      <ul class="array-form">
+        <li>Главная</li>
+        <li>Магазин</li>
+        <li>Контакты</li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <p class="footer-copy">www.product-cards.com©all right reserve</p>
+</footer>
+<button class="button-open">Регистрация</button>
+<div class="overlay">
+  <div class="modal">
+    <button class="modal-close"></button>
+    <form class="form-footer" action="">
+      <div>
+        <label for="name">Имя</label>
+        <input type="text" id="name" required placeholder="Введите имя">
+      </div>
+      <div>
+        <label for="surname">Фамилия</label>
+        <input type="text" id="surname" required placeholder="Введите фамилию">
+      </div>
+      <div>
+        <label for="dateOfBirth">Дата рождения</label>        
+        <input type="date" id="dateOfBirth" required placeholder="Введите дату рождения">
+      </div>
+      <div>
+        <label for="login">Логин</label>
+        <input type="text" id="login" required placeholder="Введите логин">
+      </div>
+      <div>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" required placeholder="Введите пароль">
+      </div>
+      <div>
+        <label for="resetPassword">Повтор пароля</label>
+        <input type="password" id="resetPassword" required placeholder="Подтвердите пароль">
+      </div>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
   <script src="/homework-5.js"></script>
   <script src="/homework-6.js"></script>
   <script type="module" src="/homework-7.js"></script>
-  <script type="module" src="/homework-8.js"></script>
-<ul class="product-card-wrapper" id="product-list"></ul>
-
-<ul class="product-card-wrapper" id="product-list"></ul>
-
-<template id="product-template">
-  <li class="product-card">
-    <img class="product-card-img" />
-    <p class="product-card__for-skin"></p>
-    <h2 class="product-card__tittle"></h2>
-    <p class="product-card__descr"></p>
-    <p class="product-card__text">Состав:</p>
-    <ul class="product-card__composition"></ul>
-    <div class="product-card__price-wrapper">
-      <span class="product-card__price-text">Цена</span>
-      <span class="product-card__price"></span>
-    </div>
-  </li>
-</template>
-</body>
-
-</head>
-</body>
-  <title>Product card</title>
-</head>
-<body style="font-family: montserrat;">
-  <h1 class="tittle">Выбери свой продукт</h1>
-  <div class="product-card-wrapper">
-    <div class="product-card">
-      <img src="images/bg1.png" alt="flower-bg" class="product-card__bg-flowers">
-      <img src="images/product-card-mousse1.png" alt="Увлажняющий мусс" width="290px" height="245">
-      <p class="product-card__for-skin">Для нормальной кожи</p>
-      <h3 class="product-card__tittle">Увлажняющий мусс</h3>
-      <p class="product-card__descr">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
-      <span class="product-card__text"> Состав:</span>
-      <ul class="product-card__composition">
-        <li class="product-card__item" type="circle">активные натуральные комплексы</li>
-        <li class="product-card__item" type="circle">витамины С, А, РР, В И Е</li>
-        <li class="product-card__item" type="circle">солнцезащитные компоненты</li>
-      </ul>
-      <div class="product-card__price-wrapper">
-        <span class="product-card__price-text">Цена </span>
-        <span class="product-card__price">2 750 &#8381;</span>
-      </div>
-    </div>
-    <div class="product-card">
-      <img  src="images/product-card-mousse1.png" alt="Увлажняющий мусс" width="290px" height="245"px>
-      <p class="product-card__for-skin">Для нормальной кожи</p>
-      <h3 class="product-card__tittle">Увлажняющая маска</h3>
-      <p class="product-card__descr">Способствует удерживанию влаги в верхних слоях кожи.</p>
-      <span class="product-card__text"> Состав:</span>
-      <ul class="product-card__composition">
-        <li class="product-card__item" type="circle">воски</li>
-        <li class="product-card__item" type="circle">минералы</li>
-        <li class="product-card__item" type="circle">масла</li>
-      </ul>
-      <div class="product-card__price-wrapper">
-        <span class="product-card__price-text">Цена </span>
-        <span class="product-card__price">3 500 &#8381;</span>
-      </div>
-    </div>
-    <div class="product-card">
-      <img src="images/product-card-mousse1.png" alt="Увлажняющий мусс" width="290px" height="245"px>
-      <p class="product-card__for-skin">Для нормальной кожи</p>
-      <h3 class="product-card__tittle">Гель для умывания</h3>
-      <p class="product-card__descr">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
-      <span class="product-card__text"> Состав:</span>
-      <ul class="product-card__composition">
-        <li class="product-card__item" type="circle">минералы</li>
-        <li class="product-card__item" type="circle">витамины С, А, РР, В И Е</li>
-        <li class="product-card__item" type="circle">солнцезащитные компоненты</li>
-      </ul>
-      <div class="product-card__price-wrapper">
-        <span class="product-card__price-text">Цена </span>
-        <span class="product-card__price">1 650 &#8381;</span>
-      </div>
-    </div>
-    <div class="product-card">
-      <img src="images/product-card-mousse1.png" alt="Увлажняющий мусс" width="290px" height="245"px>
-      <p class="product-card__for-skin">Для нормальной кожи</p>
-      <h3 class="product-card__tittle">Подарочный набор №1</h3>
-      <p class="product-card__descr">Набор, состоящий из увлажняющего крема и маски.</p>
-      <span class="product-card__text"> Состав:</span>
-      <ul class="product-card__composition">
-        <li class="product-card__item" type="circle">воски</li>
-        <li class="product-card__item" type="circle">минералы</li>
-        <li class="product-card__item" type="circle">масла</li>
-      </ul>
-      <div class="product-card__price-wrapper">
-        <span class="product-card__price-text">Цена </span>
-        <span class="product-card__price">4 750 &#8381;</span>
-      </div>
-    </div>
-    <div class="product-card">
-      <img src="images/product-card-mousse1.png" alt="Увлажняющий мусс" width="290px" height="245"px>
-      <p class="product-card__for-skin">Для нормальной кожи</p>
-      <h3 class="product-card__tittle">Подарочный набор №5</h3>
-      <p class="product-card__descr">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
-      <span class="product-card__text"> Состав:</span>
-      <ul class="product-card__composition">
-        <li class="product-card__item" type="circle">воски</li>
-        <li class="product-card__item" type="circle">минералы</li>
-        <li class="product-card__item" type="circle">масла</li>
-      </ul>
-      <div class="product-card__price-wrapper">
-        <span class="product-card__price-text">Цена </span>
-        <span class="product-card__price">7 520 &#8381;</span>
-      </div>
-    </div>
-  </div>
+  <script src="/homework-9.js"></script>
 </body>
 </html>
