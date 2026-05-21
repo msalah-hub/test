@@ -199,3 +199,39 @@ a {
 .form-footer {
   color: #ccc;
 }
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  background-color: #2b2b2b; 
+  padding: 40px;
+  border-radius: 8px;
+  border: 2px solid #3a9fd5;
+  width: 100%;
+  max-width: 400px;
+}
+
+.overlay.modal-showed {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: #fff;
+}

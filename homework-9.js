@@ -1,3 +1,5 @@
+import { Modal } from './modal.js';
+import { Form } from './form.js'
 
 // 4 задание
 
@@ -13,16 +15,27 @@ footerInner.addEventListener("submit", (event) => {
 
 // 5 задание 
 
+const overlayModal = new Modal('overlay');
 const btnOpen = document.querySelector('.button-open')
-const overlayOpen = document.querySelector('.overlay')
-const btnClose = document.querySelector('.modal-close')
 
-btnOpen.addEventListener('click', (event) => {
-  overlayOpen.classList.add('modal-showed');
+if (btnOpen) {
+  btnOpen.addEventListener('click', () => {
+    console.log('Кнопка кликнута!');
+    overlayModal.open();
+  });
+};
+
+// 6 задание
+
+const formFooter = new Form('form-footer')
+
+const formElement = document.getElementById('form-footer')
+formElement.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (formFooter.isValid()) {
+    console.log(formFooter.getValues());
+    formFooter.reset();
+  };
 });
-
-btnClose.addEventListener('click', (event) => {
-  overlayOpen.classList.remove('modal-showed');
-});
-
 
