@@ -32,7 +32,7 @@
     </div>
     <section class="footer-subscribe">
       <h3>Подпишись на наши акции:</h3>
-      <form class="form-in" action="">
+      <form class="form-in" id="form-in" action="">
         <input placeholder="Введи email... " name="email" type="email" required>
         <button type="submit">Подписаться</button>
       </form>
@@ -72,11 +72,11 @@
       </div>
       <div>
         <label for="password">Пароль</label>
-        <input type="password" id="password" required placeholder="Введите пароль">
+        <input type="password" id="password" name="password" required placeholder="Введите пароль">
       </div>
       <div>
         <label for="resetPassword">Повтор пароля</label>
-        <input type="password" id="resetPassword" required placeholder="Подтвердите пароль">
+        <input type="password" id="resetPassword" name="passwordConfirm" required placeholder="Подтвердите пароль">
       </div>
       <button type="submit">Зарегистрироваться</button>
     </form>
