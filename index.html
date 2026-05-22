@@ -32,7 +32,7 @@
     </div>
     <section class="footer-subscribe">
       <h3>Подпишись на наши акции:</h3>
-      <form class="form-in" action="">
+      <form class="form-in" id="form-in" action="">
         <input placeholder="Введи email... " name="email" type="email" required>
         <button type="submit">Подписаться</button>
       </form>
@@ -50,10 +50,10 @@
   <p class="footer-copy">www.product-cards.com©all right reserve</p>
 </footer>
 <button class="button-open">Регистрация</button>
-<div class="overlay">
+<div class="overlay" id="overlay">
   <div class="modal">
-    <button class="modal-close"></button>
-    <form class="form-footer" action="">
+    <button class="modal-close">✕</button>
+    <form class="form-footer" id="form-footer" action="">
       <div>
         <label for="name">Имя</label>
         <input type="text" id="name" required placeholder="Введите имя">
@@ -72,19 +72,16 @@
       </div>
       <div>
         <label for="password">Пароль</label>
-        <input type="password" id="password" required placeholder="Введите пароль">
+        <input type="password" id="password" name="password" required placeholder="Введите пароль">
       </div>
       <div>
         <label for="resetPassword">Повтор пароля</label>
-        <input type="password" id="resetPassword" required placeholder="Подтвердите пароль">
+        <input type="password" id="resetPassword" name="passwordConfirm" required placeholder="Подтвердите пароль">
       </div>
       <button type="submit">Зарегистрироваться</button>
     </form>
   </div>
 </div>
-  <script src="/homework-5.js"></script>
-  <script src="/homework-6.js"></script>
-  <script type="module" src="/homework-7.js"></script>
-  <script src="/homework-9.js"></script>
+<script type="module" src="./main.js"></script>
 </body>
 </html>

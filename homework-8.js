@@ -18,7 +18,7 @@ const cardDescription = products.reduce((acc, item) => {
 // 5 задание 
 
 
-function getCount() {
+/*function getCount() {
   const count = prompt("Сколько карточек отобразить? От 1 до 5");
 
   if (count < 1 || count > 5 || isNaN(count)) {
@@ -51,4 +51,4 @@ function renderCards(array) {
 const count = getCount();
 const slicedProducts = products.slice(0, count);
 renderCards(slicedProducts);
-
+*/
