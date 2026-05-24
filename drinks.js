@@ -20,8 +20,8 @@ export class Drink {
     return(`Температура напитка: ${this.#temperature}`)
   }
 
-  setTemperature() {
-    return(this.#temperature)
+  setTemperature(newTemperature) {
+    this.#temperature = newTemperature;
   }
 
   #cookingDrink() {
@@ -35,28 +35,34 @@ export class Drink {
   }
 }
 
+class Temperature extends Drink {
+  constructor(name, size, price, temp) {
+    super(name, size, price, temp)
+  }
+}
+
 class Tea extends Drink {
-  constructor(name, size, price, typeTea, typeAdditive ) {
-    super(name, size, price)
+  constructor(name, size, price, temp, typeTea, typeAdditive ) {
+    super(name, size, price, temp)
     this.typeTea = typeTea;
     this.typeAdditive = typeAdditive;
   }
 }
 
 class Natakhtari extends Drink {
-  constructor(name, size, price, typeFruit, country) {
-    super(name, size, price)
+  constructor(name, size, price, temp, typeFruit, country) {
+    super(name, size, price, temp)
     this.typeFruit = typeFruit;
     this.country = country;
   }
 }
 
 class Coffee extends Drink {
-  constructor(name, size, price, typeGrain, typeMilk) {
-    super(name, size, price)
+  constructor(name, size, price, temp, typeGrain, typeMilk) {
+    super(name, size, price, temp)
     this.typeGrain = typeGrain;
     this.typeMilk = typeMilk;
   }
 }
 
-export { Tea, Natakhtari, Coffee}
+export { Tea, Natakhtari, Coffee, Temperature}

@@ -1,4 +1,4 @@
-import { Drink } from "./drinks.js";
+import { Tea, Natakhtari, Coffee, Temperature } from "./drinks.js";
 
 class Cafe { 
   constructor(name, location) {
@@ -10,8 +10,10 @@ class Cafe {
     console.log(`Кафе ${this.name}, находится на ${this.location}`)
   }
 
-  orderdCafe() {
-    console.log(`Вы заказали: ${this.getInfo}`);
+  orderCafe(drink) {
+    drink.serveDrink();
+
+    console.log(`В кафе ${this.name}, ваш заказ ${drink.name}`);
   }
 }
 
