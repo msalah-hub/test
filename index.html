@@ -3,85 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="footer.css">
-  <title>Product card</title>
 </head>
 <body>
-<div class="all_elements" style="font-family: montserrat;">
-  <h1 class="tittle">Выбери свой продукт</h1>
-  <div class="buttons">
-    <button id="recolor-first-card-button">Перекрасить фон первой карточки</button>
-    <button id="recolor-all-card-button">Перекрасить фон всех карточек</button>
-    <button id="open-google-button">Открыть Google</button>
-    <button id="recolor-button">Нажми</button>
-  </div> 
-</div>
-<footer class="footer-site">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <h2>Products Cards</h2>
-      <p>У Нас Самые Лучше Продукты Для Кожи!</p>
-      <nav aria-label="Социальные сети">
-        <img src="/images/tg-icon.svg" alt="">
-        <img src="/images/vk-icon.svg" alt="">
-      </nav>
-    </div>
-    <section class="footer-subscribe">
-      <h3>Подпишись на наши акции:</h3>
-      <form class="form-in" id="form-in" action="">
-        <input placeholder="Введи email... " name="email" type="email" required>
-        <button type="submit">Подписаться</button>
-      </form>
-    </section>
-    <nav aria-label="Быстрые ссылки">
-      <h3>Быстрые ссылки</h3>
-      <ul class="array-form">
-        <li>Главная</li>
-        <li>Магазин</li>
-        <li>Контакты</li>
-      </ul>
-    </nav>
+  <button class="button" id="reg-button">Регистрация</button>
+  <button class="button" id="auth-button">Аутентификация</button>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="reg-modal">
+    <button class="close-modal">x</button>
+    <h1>Регистрация</h1>
+    <span>Логин</span>
+    <span>Пароль</span>
+    <span>Повторите пароль</span>
+    <span>Регистрация</span>
   </div>
-  <hr>
-  <p class="footer-copy">www.product-cards.com©all right reserve</p>
-</footer>
-<button class="button-open">Регистрация</button>
-<div class="overlay" id="overlay">
-  <div class="modal">
-    <button class="modal-close">✕</button>
-    <form class="form-footer" id="form-footer" action="">
-      <div>
-        <label for="name">Имя</label>
-        <input type="text" id="name" required placeholder="Введите имя">
-      </div>
-      <div>
-        <label for="surname">Фамилия</label>
-        <input type="text" id="surname" required placeholder="Введите фамилию">
-      </div>
-      <div>
-        <label for="dateOfBirth">Дата рождения</label>        
-        <input type="date" id="dateOfBirth" required placeholder="Введите дату рождения">
-      </div>
-      <div>
-        <label for="login">Логин</label>
-        <input type="text" id="login" required placeholder="Введите логин">
-      </div>
-      <div>
-        <label for="password">Пароль</label>
-        <input type="password" id="password" name="password" required placeholder="Введите пароль">
-      </div>
-      <div>
-        <label for="resetPassword">Повтор пароля</label>
-        <input type="password" id="resetPassword" name="passwordConfirm" required placeholder="Подтвердите пароль">
-      </div>
-      <button type="submit">Зарегистрироваться</button>
-    </form>
+
+  <div class="modal" id="auth-modal">
+    <button class="close-modal">Закрыть</button>
+    <h1>Аутентификация</h1>
+    <span>Логин</span>
+    <span>Пароль</span>
+    <span>Аутентификация</span>
   </div>
-</div>
-<script type="module" src="./homework-11.js"></script>
+  <script type="module" src="./homework-12.js"></script>
 </body>
 </html>

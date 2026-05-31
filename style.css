@@ -1,319 +1,50 @@
+ * {
+  padding: 0%;
+  margin: 0%;
+} 
 
-* {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  box-sizing: border-box;
-}
-
-#product-list {
-  list-style: none;
-  padding: 0;
-}
-
-.all_elements {
-  background-image: url("images/dandelion-background.png");
-  background-size: 790px 697px;        
-  background-repeat: no-repeat;
-  background-position: center -100px;
-}
-
-.product-card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  width: 1110px;
-  height: 1191px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.tittle {
-  display: flex;
-  justify-content: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-  line-height: 78px;
-  margin-top: 220px auto;
-  margin: 0 auto 125px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #515076
-}
-
-.product-card {
-  width: 340px;
-  height: 573px;
-  border: 2px solid white;
-  padding: 20px 20px 20px 20px;
-  background-color: #F7F7FA;
-}
-
-.product-card-img {
+.button {
+  
   display: block;
-  width: 290px;
-  margin: 0 auto 20px;
-  padding: 0px;
+  border-radius: 5px;
+  background-color: aqua;
 }
 
-.product-card__for-skin {
-  width: 171px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #A5A3B9;
+.close-button {
+  
+ 
+  border-radius: 5px;
+  color: black;
 }
 
-.product-card__tittle{
-  width: 220px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #515076;
-  white-space: nowrap;
-}
-
-.product-card__descr {
-  width: 287px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: #515076;
-}
-
-.product-card__text {
-  width: 49px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: #515076;
-}
-
-.product-card__composition {
-  width: 49px;
-  left: 110px;
-  top: 820px;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: #515076;
-  background-size: 790px 697px;
-}
-
-.product-card__composition li {
-  white-space: nowrap;
-}
-
-.product-card__item {
-  width: 237px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: #515076;
-}
-
-.product-card__price-wrapper {
-  width: 290px;
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-
-.product-card__price-text {
-  width: 56px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
-}
-
-.product-card__price {
-  width: 73px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
-}
-
-.buttons {
+.modal {
+  display: none;
   position: absolute;
-  top: 150px;
-  right: 405px;
-  display: flex;
-  gap: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 40rem;
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: 20;
 }
 
-.buttons button {
-  padding: 12px 24px;
-  border: none; 
-  border-radius: 30px; 
-  color: white; 
-  cursor: pointer;
+.modal-showed {
+  display: block;
 }
 
-.active-green { 
-  background-color: #48ea24;
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  background-color: rgb(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
 }
 
-
-.product-card-wrapper {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 25px;
-width: 1110px;
-height: 1191px;
-margin: 0px auto;
-position: relative;
-}
-
-.tittle{
-display: flex;
-justify-content: center;
-font-style: normal;
-font-weight: 400;
-font-size: 70px;
-line-height: 78px;
-margin-top: 220px auto;
-margin: 0 auto 125px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #515076
-}
-
-.product-card{
-width: 340px;
-height: 573px;
-border: 2px solid white;
-padding: 20px 20px 20px 20px;
-background-color: #F7F7FA;
-}
-
-
-.product-card-img {
-display: block;
-width: 290px;
-margin: 0 auto 20px;
-padding: 0px;
-}
-
-.product-card__bg-flowers{
-position: absolute;
-width: 790px;
-height: 697px;
-left: 85px;
-top: -400px;
-background: url(bg.png);
-}
-.product-card__for-skin {
-width: 171px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 24px;
-text-transform: uppercase;
-color: #A5A3B9;
-}
-
-.product-card__tittle{
-width: 220px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 27px;
-margin-top: 0px;
-margin-bottom: 0px;
-color: #515076;
-white-space: nowrap;
-}
-.product-card__descr{
-width: 287px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px;
-color: #515076;
-}
-
-.product-card__text{
-width: 49px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px;
-color: #515076;
-}
-
-.product-card__composition{
-width: 49px;
-left: 110px;
-top: 820px;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px;
-color: #515076;
-background-size: 790px 697px;
-}
-
-.product-card__item{
-width: 237px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px;
-color: #515076;
-}
-
-.product-card__price-wrapper{
-width: 290px;
-padding-top: 15px;
-display: flex;
-justify-content: space-between;
-white-space: nowrap;
-}
-
-.product-card__price-text{
-width: 56px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #515076;
-}
-
-.product-card__price{
-width: 73px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #515076;
+.overlay-showed {
+  display: block;
 }
 
