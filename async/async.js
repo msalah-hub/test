@@ -3,6 +3,7 @@ function loading(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+
 async function doLater() {
   const usersData = localStorage.getItem('users')
   if (usersData !== null) {
@@ -93,4 +94,4 @@ restoreBtnAll.addEventListener('click', async () => {
 
 })
 
-
+doLater();
