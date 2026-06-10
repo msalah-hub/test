@@ -1,0 +1,7 @@
+
+[
+  { "id": 1, "name": "Cristiano", "surname": "Ronaldo", "email": "cr7@mail.ru", "age": 39 },
+  { "id": 2, "name": "Messi", "surname": "Lionel", "email": "mli10@mail.ru", "age": 37 },
+  { "id": 3, "name": "Muhammad", "surname": "Salah", "email": "msalah@mail.ru", "age": 35}
+]
+
